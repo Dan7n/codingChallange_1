@@ -4,7 +4,7 @@ let minify = require('gulp-csso');
 let compressJS = require('gulp-terser');
 let browserSync = require('browser-sync').create();
 let addPrefixes = require('gulp-autoprefixer');
-let babel = require('gulp-babel');
+// let babel = require('gulp-babel');
 
 
 
@@ -24,9 +24,9 @@ gulp.task("compile", function() {
 
 gulp.task("compressJS", function() {
     return gulp.src("./js/**/*.js")
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
+        // .pipe(babel({
+        //     presets: ['@babel/env']
+        // }))
         .pipe(compressJS())
         .pipe(gulp.dest("dist/js"))
         .pipe(browserSync.stream());
