@@ -34,12 +34,32 @@ html {
             color: #1761a0; }
             html body nav ul li a:hover {
               color: #4c96d7; }
-    html body article {
-      font-size: 1.2rem;
-      margin: 0 10%;
-      line-height: 1.6; }
+    html body section {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      html body section article {
+        font-size: 1.2rem;
+        margin: 0 10%;
+        line-height: 1.6;
+        padding-top: 15px; }
     html body footer {
       width: 100%;
-      height: 30%;
+      height: 20%;
       background-color: #002855;
-      color: #fff; }
+      color: #fff;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-around;
+      gap: 25px;
+      align-items: flex-start;
+      text-align: center; }
+      html body footer div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; }
+        html body footer div h6 {
+          font-size: 1.2rem;
+          margin-bottom: 5px; }
+        html body footer div p {
+          font-size: 0.9rem; }

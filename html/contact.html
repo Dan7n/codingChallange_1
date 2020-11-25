@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="./../dist/css/contact.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/0435225707.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <nav>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0435225707.js" crossorigin="anonymous"></script>
+</head>
+<nav>
     <div><img src="./../assets/logo.png" /></div>
 
     <ul>
-      <li><a href="./../index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
-  <body>
+</nav>
+
+<body>
     <h1>Kontakta oss gärna</h1>
     <p>Vi svarar på mail inom 24 timmar</p>
-    <form name="formular" id="formular" method="post" action="">
-      <label for="fnamn">Förnamn:</label><br />
-      <input
-        type="text"
-        name="fnamn"
-        id="fnamn"
-        placeholder="ditt förnamn"
-      /><br />
+    <div id="formElement">
+        <form name="formular" id="formular" method="post" action="" onsubmit="return false">
+            <label for="fnamn">Förnamn:</label><br />
+            <input type="text" name="fnamn" id="fnamn" /><br />
 
-      <label for="enamn">Efternamn:</label><br />
-      <input
-        type="text"
-        name="enamn"
-        id="enamn"
-        placeholder="ditt efternamn"
-      /><br />
+            <label for="enamn">Efternamn:</label><br />
+            <input type="text" name="enamn" id="enamn" /><br />
 
-      <label for="epost">E-postadress:</label><br />
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="din e-postadress"
-      />
-      <br />
+            <label for="epost">E-postadress:</label><br />
+            <input type="email" name="email" id="email" />
+            <br />
 
-      <label for="message">Meddelande:</label><br />
-      <input
-        type="message"
-        name="message"
-        id="message"
-        placeholder="Ditt meddelande"
-      />
-      <br />
+            <label for="message">Meddelande:</label><br />
+            <input type="message" name="message" id="message" placeholder="Ditt meddelande" />
+            <br />
 
-      <input type="submit" name="skicka" id="skicka" value="Skicka" />
-    </form>
-    <footer>Contact Info</footer>
-  </body>
+            <input type="submit" name="skicka" id="skicka" value="Skicka" />
+        </form>
+    </div>
+    <footer>
+        <div>
+            <h6>Öppettider:</h6>
+            <p>Måndag - Söndag 05:45 - 23:00</p>
+        </div>
+        <div>
+            <h6>Kontaktuppgifter</h6>
+            <p>Telefon: 0761234567</p>
+            <p>Adress: Fitnessvägen 28, Fitnessborg</p>
+            <p>Email: info@fitnesspower.se</p>
+        </div>
+    </footer>
+</body>
+
 </html>

@@ -12,6 +12,22 @@ html {
     height: 100%;
     width: 100%;
     position: relative; }
+    html body h1 {
+      text-align: center;
+      margin-top: 10px; }
+    html body p {
+      text-align: center;
+      margin-bottom: 10px; }
+    html body #formElement {
+      height: 15%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8%; }
+      html body #formElement #message {
+        width: 200px;
+        padding: 0 0 150px 0; }
     html body nav {
       display: flex;
       flex-direction: row;
@@ -36,6 +52,23 @@ html {
               color: #4c96d7; }
     html body footer {
       width: 100%;
-      height: 30%;
+      height: 20%;
       background-color: #002855;
-      color: #fff; }
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-around;
+      gap: 25px;
+      align-items: flex-start;
+      text-align: center; }
+      html body footer div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; }
+        html body footer div h6 {
+          font-size: 1.2rem;
+          margin-bottom: 5px; }
+        html body footer div p {
+          font-size: 0.9rem; }
